@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15vh;
+}
+
+.logo {
+  width: 20vw;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40vw;
+  list-style: none;
+  font-size: 2rem;
+  color: hsl(230, 29%, 20%);
+}
+
+.login {
+  font-family: "Barlow Condensed", sans-serif;
+  background: transparent;
+  border: none;
+  color: hsl(230, 11%, 40%);
+  font-size: 2rem;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0vh;
+}
+
+.intro-text {
+  width: 40vw;
+}
+
+.intro-text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.dashboard-text {
+  display: flex;
+}
+
+.new {
+  padding: 0.4rem 1rem;
+  background: hsl(230, 29%, 20%);
+  border-radius: 3rem;
+  color: #fff;
+  margin: 0rem 1rem;
+}
+
+.intro-text p {
+  color: hsl(230, 11%, 40%);
+  width: 70%;
+  font-size: 1.5rem;
+}
+
+.intro-img {
+  width: 50vw;
+}
+
+.img {
+  width: 100%;
+}
+
+.img-background {
+  height: 60vh;
+  width: 70%;
+  background: #cfcfcf;
+  position: absolute;
+  top: 0vh;
+  z-index: -1;
+  border-bottom-right-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+}
+
+.intro-buttons {
+  display: flex;
+  margin: 5vh 0vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 100%, 68%);
+}
+
+.intro-buttons h5 {
+  margin: 0rem 3rem;
+  width: 60%;
+  color: hsl(231, 7%, 65%);
+  letter-spacing: 0.4rem;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: none;
+  }
+  main {
+    height: auto;
+  }
+  .intro-text {
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    line-height: 2.5rem;
+    position: absolute;
+    top: 40vh;
+  }
+  .new {
+    padding: 0.1rem 2rem;
+  }
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+  .intro-text p {
+    width: 100vw;
+  }
+  .intro-img {
+    width: 100vw;
+    height: auto;
+  }
+  .img-background {
+    height: 40vh;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    right: 0vh;
+  }
+}
